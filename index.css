@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #05080e;
+  color: #f0f8ff;
+}
+.info {
+  position: absolute;
+  left: 0%;
+  margin: 1rem 1.25rem;
+  z-index: 100;
+  cursor: pointer;
+}
+.info :hover {
+  opacity: 0.7;
+  transition: all 0.8s ease;
+}
+#main {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  opacity: 0;
+}
+#anne {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  top: 58%;
+  left: 50%;
+  z-index: 20;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gameintro {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  z-index: 25;
+  top: 28%;
+  left: 55%;
+  opacity: 0;
+  overflow: hidden;
+}
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 20%;
+  z-index: 10;
+  max-width: 100%;
+  height: auto;
+}
+.mbg {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.intro .introContent {
+  background-image: url("src/infobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 180;
+  top: 0;
+  right: -100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.intro .introClose {
+  position: fixed;
+  z-index: 190;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  cursor: pointer;
+}
+.introContent .myView {
+  padding: 3rem 1.25rem;
+  position: relative;
+}
+.myView .playVideo {
+  max-width: 100%;
+  padding: 1rem 10rem;
+}
+.myView .team {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 1.25rem 0;
+}
+.myView .team .number {
+  max-width: 100%;
+  border-radius: 100%;
+  transform: scale(1);
+}
+.myView .under {
+  text-align: center;
+}
+@media (max-width: 1366px) {
+}
+@media (max-width: 1280px) {
+  .title {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  .gameintro {
+    transform: scale(0.8);
+    top: 28%;
+    left: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  #anne {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  .gameintro {
+    transform: scale(0.6);
+  }
+  .myView .playVideo {
+    padding: 1rem 8rem;
+  }
+
+  .myView .team .number {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  .myView .playVideo {
+    padding: 1rem 3.5rem;
+  }
+  .myView .team {
+    flex-wrap: wrap;
+  }
+  .gameintro {
+    transform: scale(0.5);
+    top: 28%;
+    left: 38%;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    top: 30%;
+  }
+  .myView .playVideo {
+    padding: 1rem 2rem;
+  }
+  .myView .team {
+    flex-wrap: wrap;
+    flex: 1 1;
+  }
+  .intro .introClose {
+    width: 80px;
+  }
+  #anne {
+    top: 55%;
+    left: 50%;
+  }
+  .gameintro {
+    transform: scale(0.4);
+    top: 40%;
+    left: 27%;
+  }
+}
+@media (max-width: 415px) {
+  .title {
+    transform: translate(-50%, -50%) scale(0.7);
+    top: 30%;
+  }
+  .myView .playVideo {
+    padding: 2rem 1rem;
+  }
+  .myView .team {
+    flex-wrap: nowrap;
+    flex: 1 2;
+  }
+  .info {
+    transform: scale(0.7);
+  }
+}

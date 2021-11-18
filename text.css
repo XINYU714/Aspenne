@@ -1,0 +1,98 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.bigtext {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.nortext {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.midtext {
+  font-size: 1.5rem;
+}
+.smtext {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1366px) {
+  .bigtext {
+    font-size: 2.5rem;
+  }
+  .nortext {
+    font-size: 2rem;
+  }
+  .midtext {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .bigtext {
+    font-size: 2.25rem; /*36*/
+  }
+  .nortext {
+    font-size: 1.75rem;
+  }
+  .midtext {
+    font-size: 1.5rem; /*24*/
+  }
+  .smtext {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 992px) {
+  .bigtext {
+    font-size: 2rem;
+  }
+  .nortext {
+    font-size: 1.5rem;
+  }
+  .midtext {
+    font-size: 1.25rem;
+  }
+  .smtext {
+    font-size: 1.125rem;
+  }
+  @media (max-width: 768px) {
+    .bigtext {
+      font-size: 1.75rem;
+    }
+    .nortext {
+      font-size: 1.25rem;
+    }
+    .midtext {
+      font-size: 1.125rem;
+    }
+    .smtext {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .bigtext {
+      font-size: 1.5rem;
+    }
+    .nortext {
+      font-size: 1.125rem;
+    }
+    .midtext {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 415px) {
+    .bigtext {
+      font-size: 1.25rem;
+    }
+    .nortext {
+      font-size: 1rem;
+    }
+    .midtext {
+      font-size: 0.75rem;
+    }
+    .smtext {
+      font-size: 0.75rem;
+    }
+  }
+}
