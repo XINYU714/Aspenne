@@ -74,11 +74,10 @@ body {
   scroll-behavior: smooth;
 }
 .intro .introClose {
-  position: fixed;
+  position: absolute;
   z-index: 190;
   top: 0;
   left: 0;
-  transform: scale(0);
   cursor: pointer;
 }
 .introContent .myView {
@@ -92,7 +91,7 @@ body {
 .myView .team {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   overflow: hidden;
   text-align: center;
   flex-wrap: nowrap;

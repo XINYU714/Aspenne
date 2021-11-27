@@ -6,7 +6,6 @@ const t1=gsap.timeline();
 /*info*/
 let info=
 open.to('.introContent',{right:"0%",duration:1});
-open.to('.introClose',{opacity: 1,scale:'1',duration:0.8},'<');
 info.pause();
 document.querySelector('.info').onclick=()=>info.play();
 document.querySelector(".introClose").onclick = () => info.reverse();
@@ -31,7 +30,8 @@ anneani.setSpeed(0.5);
 function showintro()
 {
   let annesay=gsap.timeline();
-  annesay.to('.gameintro',{opacity:1,ease:Elastic.easeOut,duration:1});
+  annesay.to('.gameintro',{opacity:1,duration:1});
+  annesay.to('.gameintro',{opacity:0,duration:2},2);
 }
 document.querySelector('#anne').onclick=()=>showintro();
 
