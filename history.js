@@ -26,7 +26,6 @@ gsap.to(".hour", {
   }
 });
 gsap.to('.time', {
-  // backgroundColor:'linear-gradient(rgba(43,43,43,1) 0%, rgba(43,43,43,1) 95%, rgba(236,237,232,1) 100%)',
   background:' linear-gradient(rgba(43,43,43,1) 0%, rgba(43,43,43,1) 95%, rgba(236,237,232,1) 100%)',
   scrollTrigger: {
     trigger: ".time",
@@ -61,7 +60,7 @@ gsap.to(".down", {
       snap:true,
     }
   });
-  /*show*/
+/*show*/
 gsap.from(showtime,
   {
     ease:Power2.easeOut,
@@ -122,7 +121,7 @@ gsap.from('.poor',
         duration:1.2,
         scrollTrigger:
         {
-          trigger:".drinking",
+          trigger:".drinkingtl",
           toggleActions:"play none restart reset",
           start:'top center',
           end:'bottom center',
@@ -182,8 +181,7 @@ gsap.from('.drinkingt2',
       scrollTrigger:
       {
         trigger:'.herbbox',
-        toggleActions:"play none restart reset",
-        // markers:true,
+        toggleActions:"play none restart reset"
       }
 });   
     gsap.from('.herbsub span',
