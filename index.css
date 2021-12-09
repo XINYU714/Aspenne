@@ -61,7 +61,7 @@ body {
   height: auto;
 }
 .intro .introContent {
-  background-image: url("src/infobg.png");
+  background-image: url("src/infobg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

@@ -38,10 +38,9 @@
 }
 .fire {
   background: url("src/firevideo.gif") no-repeat center;
-
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
 }
 .fire .fitl {
   position: relative;

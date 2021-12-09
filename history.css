@@ -152,12 +152,76 @@ body {
   margin: 0rem 1rem;
   cursor: pointer;
 }
+/*cloth*/
+.cloth {
+  position: relative;
+  margin-top: 10rem;
+}
+.cloth .clothgp {
+  position: relative;
+  margin: 8% 0 5% 15%;
+  opacity: 1;
+}
+.cloth .richcloth,
+.cloth .poorcloth {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin: 2rem 10%;
+}
+
+.poorcloth :nth-child(1) {
+  order: 2;
+}
+.poorcloth :nth-child(2) {
+  order: 1;
+}
+.cloth .richcloth img,
+.cloth .poorcloth img {
+  position: relative;
+  max-width: 80%;
+}
+/*house*/
+.house {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+  /* flex: 1; */
+}
+.house .housetl {
+  margin: 5%;
+  position: relative;
+}
+.house .compare {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+.compare .town,
+.compare .rural {
+  padding: 1rem;
+}
+.compare img {
+  max-width: 100%;
+}
+.space {
+  width: 100%;
+  height: 5vw;
+}
 /*酒類*/
 .drinking {
   position: relative;
-  margin-top: 25%;
-  width: 100%;
-  height: 100%;
+  margin-top: 20%;
 }
 /*酒類文字*/
 .drinking .drinkingtl {
@@ -168,6 +232,7 @@ body {
   margin: 5% 0 0 10%;
 }
 .drinking .down {
+  position: absolute;
   max-width: 300px;
   width: 100%;
   background-image: url("src/bucket.png");
@@ -176,10 +241,9 @@ body {
   transform: scale(1);
   z-index: 0;
   overflow: hidden;
-  position: absolute;
   top: 0%;
   right: 0;
-  height: 650px;
+  min-height: 650px;
 }
 .drinkingt1 {
   color: rgb(63, 60, 60);
@@ -218,68 +282,6 @@ body {
   left: 0;
   height: auto;
 }
-/*cloth*/
-.cloth {
-  position: relative;
-  margin-top: 10rem;
-  overflow: hidden;
-  width: 100%;
-}
-.cloth .clothgp {
-  position: relative;
-  margin: 8% 0 5% 15%;
-  opacity: 1;
-}
-.cloth .richcloth,
-.cloth .poorcloth {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  flex: 1;
-  margin: 2rem 10%;
-}
-.poorcloth :nth-child(1) {
-  order: 2;
-}
-.cloth .richcloth img,
-.cloth .poorcloth img {
-  max-width: 80%;
-}
-
-/*house*/
-.house {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.house .housetl {
-  position: relative;
-  margin: 5%;
-}
-.house .compare {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
-  overflow: hidden;
-}
-.compare .town,
-.compare .rural {
-  padding: 1rem;
-}
-.compare img {
-  max-width: 100%;
-}
-.space {
-  width: 100%;
-  height: 5vw;
-}
 /* break ponit */
 @media screen and (max-width: 1560px) {
   .time .timesub {
@@ -287,22 +289,22 @@ body {
   }
 }
 @media screen and (max-width: 1370px) {
-  .drinking .down {
-    top: 0%;
-  }
   .drinkingt2 {
     top: 85%;
   }
   .time .timesub {
     bottom: 5%;
   }
+  .drinking .down {
+    top: 10%;
+  }
 }
 @media screen and (max-width: 1280px) {
-  .drinking .down {
-    top: -5%;
-  }
   .time {
     height: auto;
+  }
+  .drinking .down {
+    top: 0;
   }
 }
 @media (max-width: 992px) {
@@ -318,12 +320,12 @@ body {
   .tl2 {
     font-size: 1rem;
   }
+  .drinkingt2 {
+    top: 75%;
+  }
   .drinking .down {
     transform: scale(0.8);
     top: -10%;
-  }
-  .drinkingt2 {
-    top: 75%;
   }
   .cloth {
     margin-top: 1rem;
@@ -344,10 +346,6 @@ body {
   .time .timesub {
     bottom: 5%;
   }
-  .drinking .down {
-    transform: scale(0.6);
-    top: -10%;
-  }
   .drinkingt2 {
     top: 70%;
   }
@@ -356,6 +354,10 @@ body {
   }
   .compare img {
     max-width: 70%;
+  }
+  .drinking .down {
+    transform: scale(0.6);
+    top: -5%;
   }
 }
 @media (max-width: 576px) {
@@ -393,13 +395,13 @@ body {
   .time .timesub {
     bottom: 10%;
   }
-  .drinking .down {
-    transform: scale(0.5);
-    top: -12%;
-  }
   .drinkingt2 {
     top: 70%;
     line-height: 2;
+  }
+  .drinking .down {
+    transform: scale(0.5);
+    top: -10%;
   }
   .herbbox .herbct {
     top: 42%;
@@ -434,10 +436,6 @@ body {
   .time .clock .hour {
     transform: rotate(-60deg) scale(0.6);
   }
-  .drinking .down {
-    transform: scale(0.35);
-    top: -23%;
-  }
   .drinkingt2 {
     top: 68%;
   }
@@ -450,5 +448,9 @@ body {
   }
   .herbbox .herbct {
     top: 40%;
+  }
+  .drinking .down {
+    transform: scale(0.4);
+    top: -20%;
   }
 }
