@@ -39,7 +39,6 @@ body {
   position: relative;
   width: 100%;
   height: 90vh;
-  /* overflow: hidden; */
   background-color: none;
 }
 .time .timecontent {
@@ -191,7 +190,6 @@ body {
   flex-direction: column;
   text-align: center;
   margin-top: 3rem;
-  /* flex: 1; */
 }
 .house .housetl {
   margin: 5%;
@@ -218,6 +216,29 @@ body {
   width: 100%;
   height: 5vw;
 }
+/* traffic */
+.traffic {
+  position: relative;
+  margin-top: 10%;
+}
+.traffic .trafficgp {
+  position: relative;
+  margin: 5% auto;
+  opacity: 1;
+  text-align: center;
+}
+.traffic .trafficimg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+  flex: 1;
+}
+.trafficimg img {
+  max-width: 100%;
+}
+
 /*酒類*/
 .drinking {
   position: relative;
@@ -420,6 +441,9 @@ body {
     order: 1;
   }
   .house .compare {
+    flex-direction: column;
+  }
+  .traffic .trafficimg {
     flex-direction: column;
   }
 }

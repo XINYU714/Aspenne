@@ -207,3 +207,37 @@ gsap.from(houseMix, {
     toggleActions: "play none restart reset",
   },
 });
+gsap.from(".trafficgp", {
+  opacity: 0,
+  y: "-30%",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".trafficgp",
+    start: "top center",
+    toggleActions: "play none restart reset",
+  },
+});
+
+gsap.from(".traffica", {
+  ease: Power2.easeOut,
+  opacity: 0,
+  x: "20%",
+  duration: 2,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: ".traffica",
+    start: "top center",
+    toggleActions: "play none restart reset",
+  },
+});
+gsap.from(".trafficpa", {
+  ease: Power2.easeOut,
+  opacity: 0,
+  x: "-20%",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".trafficpa",
+    start: "top center",
+    toggleActions: "play none restart reset",
+  },
+});

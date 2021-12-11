@@ -14,7 +14,7 @@ gsap.to(".down", {
     end: "+=" + 0.5 * offset_value,
     scrub: true,
     snap: true,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -43,7 +43,6 @@ gsap.from(drinkingtext, {
     toggleActions: "play none restart reset",
     start: "top center",
     end: "bottom center",
-    markers: true,
     delay: 0.5,
   },
 });
@@ -57,7 +56,7 @@ gsap.from(".drinkingt1", {
     trigger: ".drinkingt1",
     start: "top center",
     end: "bottom center",
-    scrub: 1,
+    scrub: 0.5,
     toggleActions: "play none restart reset",
   },
 });
@@ -87,7 +86,6 @@ function drinkingTextChange(drinkingshow) {
         end: "top center",
         toggleActions: "play none restart reset",
         scrub: 1,
-        markers: true,
       },
     });
   } else {
@@ -102,7 +100,6 @@ function drinkingTextChange(drinkingshow) {
         end: "top center",
         toggleActions: "play none restart reset",
         scrub: 1,
-        markers: true,
       },
     });
   }

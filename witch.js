@@ -48,7 +48,7 @@ gsap.from(".overview", {
     trigger: ".overview",
     start: "top center",
     end: "top center",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
 });
 gsap.from(".placetext", {

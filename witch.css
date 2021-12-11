@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", "sans-serif";
-  /* background: #121825; */
   background: url("src/test.webp");
   background-size: contain;
   color: #d3cfcf;

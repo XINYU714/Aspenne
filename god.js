@@ -179,13 +179,13 @@ function myFunction(attackChange) {
     );
     gsap.to(".weightwitch", {
       opacity: 1,
-      left: "40%",
-      top: "45%",
+      right: "-10%",
+      top: "42%",
       scale: "0.3",
       duration: 2.5,
       scrollTrigger: {
         trigger: ".weight",
-        // start: "top top",
+        start: "top center",
         toggleActions: "play none restart reset",
       },
     });
@@ -233,20 +233,19 @@ function myFunction(attackChange) {
           start: "top top",
           snap: true,
           scrub: true,
-          // markers: true,
         },
       }
     );
 
     gsap.to(".weightwitch", {
       opacity: 1,
-      left: "85%",
       top: "70%",
+      right: "3%",
       scale: "0.4",
       duration: 2.5,
       scrollTrigger: {
         trigger: ".weight",
-        start: "top top",
+        start: "top center",
         toggleActions: "play none restart reset",
       },
     });
