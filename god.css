@@ -36,27 +36,30 @@
   height: 100vh;
   overflow: hidden;
 }
-.fire {
-  background: url("src/firevideo.gif") no-repeat center;
-  color: transparent;
-  background-clip: text;
-  /* -webkit-background-clip: text; */
+/* .fire {
+} */
+.fire > div {
+  background: url("src/firevideo2.gif") no-repeat center;
 }
 .fire .fitl {
   position: relative;
   text-align: center;
   top: 30%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .fire .firetext {
   position: relative;
   top: 30%;
   text-align: center;
   line-height: 2.5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .water {
   position: relative;
-  /* background-color: #dadada; */
-  /* color: #131824; */
   color: #d3cfcf;
 }
 .waterbg {
@@ -82,7 +85,7 @@
   position: absolute;
   max-width: 213px;
   width: 100%;
-  background-image: url("src/tearsprite-415.png");
+  background-image: url("src/tearsprite-415.webp");
   background-repeat: no-repeat;
   background-position: 0 50%;
   overflow: hidden;
@@ -160,8 +163,8 @@
   transform: scale(1.5);
   cursor: pointer;
   z-index: 5;
-  top: 25%;
-  left: 0;
+  top: 0%;
+  right: 100%;
   opacity: 0;
 }
 .weight > a {
