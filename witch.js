@@ -54,6 +54,7 @@ gsap.from(".overview", {
 gsap.from(".placetext", {
   scrollTrigger: {
     trigger: ".placetext",
+    start: "top center",
     toggleActions: "play none restart reset",
   },
   y: "10%",
@@ -123,6 +124,7 @@ gsap.from(".bookphoto", {
   ease: Power2.easeOut,
   scrollTrigger: {
     trigger: "#book",
+    start: "top center",
     toggleActions: "play none restart reset",
   },
 });
@@ -134,6 +136,7 @@ gsap.from(".booktext", {
   delay: 0.5,
   scrollTrigger: {
     trigger: "#book",
+    start: "top center",
     toggleActions: "play none restart reset",
   },
 });
