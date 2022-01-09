@@ -43,7 +43,7 @@ section.main {
   position: absolute;
   display: none;
   height: auto;
-  z-index: 6;
+  z-index: 10;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -60,7 +60,7 @@ section.main {
   width: 340px;
   left: 50%;
   top: 95%;
-  z-index: 10;
+  z-index: 5;
 }
 section.info {
   position: relative;
@@ -166,7 +166,7 @@ section.info {
     top: 40%;
   }
   .main .mainrole {
-    top: 70%;
+    top: 65%;
   }
   .main .gameintro {
     top: 70%;
@@ -182,9 +182,31 @@ section.info {
   .info .contact {
     margin-top: 2rem;
   }
+  .main .gameintro {
+    width: 80vw;
+  }
+  .main .download {
+    top: 85%;
+  }
+  .info .styleIt {
+    margin: 2% auto;
+    z-index: 5;
+  }
+  .styleIt .yt {
+    height: 72.5vw;
+  }
 }
 @media (max-width: 415px) {
   .team .number {
     max-width: 45vw;
+  }
+  .main .title {
+    top: 40%;
+  }
+  .main .mainrole {
+    top: 63%;
+  }
+  .main .gameintro {
+    top: 62.5%;
   }
 }
