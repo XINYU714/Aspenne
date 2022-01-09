@@ -55,7 +55,7 @@ gsap.from(".drinkingt1", {
     start: "top center",
     end: "bottom center",
     toggleActions: "play none restart none",
-    markers: true,
+    // markers: true,
     scrub: 0.8,
   },
 });
@@ -69,7 +69,7 @@ gsap.from(drinkingtext, {
     start: "top center",
     // end: "top center",
     toggleActions: "play none restart none",
-    markers: true,
+    // markers: true,
   },
 });
 
