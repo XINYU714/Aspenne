@@ -1,0 +1,37 @@
+.topbtn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: -10%;
+  overflow: hidden;
+  top: 80%;
+  width: 8vw;
+  cursor: pointer;
+  z-index: 50;
+}
+.topbtn:hover {
+  animation: wiggle 0.8s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 576px) {
+  .topbtn {
+    width: 15vw;
+  }
+}

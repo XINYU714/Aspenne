@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0e1520;
+  color: #f0f8ff;
+}
+section.main {
+  max-width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+.main .mbg {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.main .title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 18%;
+  z-index: 5;
+  /* width: 750px; */
+  max-width: 47.5vw;
+  height: auto;
+}
+.main .mainrole {
+  position: absolute;
+  width: 45vw;
+  height: auto;
+  transform: translate(-50%, -50%);
+  top: 52.5%;
+  left: 50%;
+  z-index: 5;
+  overflow: hidden;
+  cursor: pointer;
+  /* max-width: 50%; */
+}
+.main .gameintro {
+  position: absolute;
+  display: none;
+  height: auto;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  overflow: hidden;
+  width: 52vw;
+  /* background: rgba(19, 19, 19, 0.31); */
+  background-size: inherit;
+  cursor: pointer;
+}
+.main .download {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  left: 50%;
+  top: 95%;
+  z-index: 5;
+}
+section.info {
+  position: relative;
+  z-index: 5;
+}
+.info .styleIt {
+  position: relative;
+  width: 100%;
+  margin: 5% auto;
+  z-index: 5;
+}
+.styleIt .yt {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vw;
+}
+.info .contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.25rem;
+}
+.contact svg {
+  margin: 0 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.info .team {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  z-index: 5;
+  margin-top: 6.25rem;
+}
+.team .number {
+  position: relative;
+  max-width: 100%;
+  border-radius: 100%;
+  padding: 0 2.3rem;
+}
+.info .under {
+  text-align: center;
+  z-index: 5;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.linear {
+  height: 10vh;
+  z-index: 1;
+}
+.linear::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1200px;
+  z-index: 1;
+  background-image: linear-gradient(
+    180deg,
+    rgba(16, 23, 35, 0) 0%,
+    #080c13 9.69%,
+    #151c27 28.96%,
+    rgba(27, 27, 55, 0.9) 62.29%,
+    #0e1520 82.08%
+  );
+}
+@media (max-width: 1366px) {
+}
+@media (max-width: 1280px) {
+  .gameintro {
+    transform: scale(0.8);
+    top: 28%;
+    left: 50%;
+  }
+  .main .mainrole {
+    transform: scale(0.8);
+  }
+  .main .download {
+    width: 20vw;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .linear::after {
+    height: 1000px;
+  }
+}
+@media (max-width: 576px) {
+  .linear::after {
+    height: 800px;
+  }
+  .main .title {
+    top: 40%;
+  }
+  .main .mainrole {
+    top: 65%;
+  }
+  .main .gameintro {
+    top: 70%;
+  }
+  .info .team {
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+  .team .number {
+    max-width: 35vw;
+    padding: 1rem 2.3rem;
+  }
+  .info .contact {
+    margin-top: 2rem;
+  }
+  .main .gameintro {
+    width: 80vw;
+  }
+  .main .download {
+    top: 85%;
+  }
+  .info .styleIt {
+    margin: 2% auto;
+    z-index: 5;
+  }
+  .styleIt .yt {
+    height: 72.5vw;
+  }
+}
+@media (max-width: 415px) {
+  .team .number {
+    max-width: 45vw;
+  }
+  .main .title {
+    top: 40%;
+  }
+  .main .mainrole {
+    top: 63%;
+  }
+  .main .gameintro {
+    top: 62.5%;
+  }
+}
