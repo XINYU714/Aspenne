@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,11 @@
     <meta name="description" content="國立嘉義大學111級數位系畢業專題製作—Aspenne。Aspenne是一款以女巫視角來描述獵巫時期(Witch-hunt)的中世紀遊戲。">
     <title>獵巫Witch-hunt</title>
     <link rel="icon" href="src/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="text.css">
-    <link rel="stylesheet" href="witch.css">
-    <link rel="stylesheet" href="god.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./css/text.css">
+    <link rel="stylesheet" href="./css/witch.css">
+    <link rel="stylesheet" href="./css/god.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/btn.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -47,14 +48,14 @@
 
                 <img src="src/witch.webp" alt="1" srcset=""class="witchgirl">
                 <img src="src/moon.webp" alt="2" srcset="" class="moon">
-                <img src="src/mainWitch_front.webp" alt="3" class="front">
+                <img src="src/mainWitch_front2.png" alt="3" class="front">
                 <img src="src/mainWitch_fronttree.webp" alt="4" class="fttree">
-                <img src="src/mainWitch_midtree.webp" alt="5" srcset=""  class="midtree">
-                <img src="src/mainWitch_backtree.webp" alt="5" srcset=""  class="bktree">
+                <img src="src/mainWitch_midtree.png" alt="5" srcset=""  class="midtree">
+                <img src="src/mainWitch_backtree.png" alt="5" srcset=""  class="bktree">
                
                 <picture>
-                <source media="(max-width:768px)" srcset="src/mainWitch_bg2-768.webp" class="mainbg" >
-                <img src="src/mainWitch_bg2.webp" alt="bg" srcset="" class="mainbg" width="1024" >                
+                <source media="(max-width:768px)" srcset="src/mainWitch_bg2-768.png" class="mainbg" >
+                <img src="src/mainWitch_bg2.png" alt="bg" srcset="" class="mainbg" width="1024" >                
                </picture>
                
             
@@ -129,21 +130,13 @@
                 <div class="firetext midtext">
                   手拿燒紅的鐵跑一段距離或者蒙著眼赤腳走過燒紅的犁頭<br>三天後檢查，如有傷說明有罪，無傷即可釋放
                 </div>
+                <video autoplay muted loop id="firevied" class="firevideo">
+                    <source src="./video/firevideo.mp4" type="video/mp4">
+                  </video>
             </section>
+
           </div>
-          <!-- 水煙 -->
-        <div id="panel-con">
-            <section class="panel  full water">
-            <div class="bigtext wttl">水淹檢定</div>
-            <p class="watertext midtext">當時人們認為女巫體重輕，是因為與魔鬼交易會把靈魂交出，如果丟到水裡漂浮起來，認定有罪</p>
-            <div class="waterbg">
-            <svg id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-          <path d="M 0,700 C 0,700 0,175 0,175 C 38.823637702503675,216.18446244477173 77.64727540500735,257.36892488954345 148,238 C 218.35272459499265,218.63107511045655 320.2345360824742,138.70876288659792 388,122 C 455.7654639175258,105.29123711340208 489.41458026509576,151.7960235640648 532,183 C 574.5854197349042,214.2039764359352 626.1071428571429,230.10714285714286 690,214 C 753.8928571428571,197.89285714285714 830.1568483063328,149.77540500736376 894,154 C 957.8431516936672,158.22459499263624 1009.2654639175257,214.79123711340202 1067,239 C 1124.7345360824743,263.208762886598 1188.7812960235642,255.059646539028 1252,239 C 1315.2187039764358,222.940353460972 1377.609351988218,198.970176730486 1440,175 C 1440,175 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587a66" class="transition-all duration-300 ease-in-out delay-150 path1"></path>
-          <path d="M 0,700 C 0,700 0,350 0,350 C 71.30430780559647,316.91347569955815 142.60861561119293,283.82695139911635 209,287 C 275.39138438880707,290.17304860088365 336.86984536082474,329.6056701030928 387,340 C 437.13015463917526,350.3943298969072 475.912002945508,331.75036818851254 525,321 C 574.087997054492,310.24963181148746 633.4821428571429,307.39285714285717 698,315 C 762.5178571428571,322.60714285714283 832.1594256259204,340.6782032400589 901,337 C 969.8405743740796,333.3217967599411 1037.8801546391753,307.89432989690727 1099,323 C 1160.1198453608247,338.10567010309273 1214.3199558173785,393.74447717231226 1270,405 C 1325.6800441826215,416.25552282768774 1382.8400220913109,383.12776141384387 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587a88" class="transition-all duration-300 ease-in-out delay-150 path2"></path>
-          <path d="M 0,700 C 0,700 0,525 0,525 C 59.88530927835052,517.2028718703976 119.77061855670104,509.4057437407953 175,524 C 230.22938144329896,538.5942562592047 280.80283505154637,575.5798969072165 337,577 C 393.19716494845363,578.4201030927835 455.0180412371135,544.2746686303386 527,546 C 598.9819587628865,547.7253313696614 681.1250000000001,585.3214285714287 746,573 C 810.8749999999999,560.6785714285713 858.4819587628865,498.4396170839469 911,470 C 963.5180412371135,441.5603829160531 1020.9471649484537,446.9201030927835 1073,461 C 1125.0528350515463,475.0798969072165 1171.729381443299,497.87997054491905 1232,510 C 1292.270618556701,522.120029455081 1366.1353092783506,523.5600147275404 1440,525 C 1440,525 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587aff" class="transition-all duration-300 ease-in-out delay-150 path3"></path></svg>
-            </div>
-            </section>
-        </div>
+
         <!-- 眼淚 -->
         <div id="panel-con">
             <section class="panel  full tear">
@@ -166,17 +159,30 @@
           <section class="panel  full weight">
             <div class="bigtext whtl">體重檢定</div>
             <p class="weighttext midtext">傳聞女巫會用掃帚飛行，因此女巫體重很輕<br>但就算體重正常也不能斷定， 因為女巫有可能在過程中施展魔法</p>
-            <img src="src/weightwitch.webp" alt="Witch" srcset="" class="weightwitch">
+            <!-- <img src="src/weightwitch.webp" alt="Witch" srcset="" class="weightwitch"> -->
           </section>
         </div>
-
+          <!-- 水煙 -->
+          <div id="panel-con">
+            <section class="panel  full water">
+            <div class="bigtext wttl">水淹檢定</div>
+            <p class="watertext midtext">當時人們認為女巫體重輕，是因為與魔鬼交易會把靈魂交出，如果丟到水裡漂浮起來，認定有罪</p>
+            <div class="waterbg">
+            <svg id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+          <path d="M 0,700 C 0,700 0,175 0,175 C 38.823637702503675,216.18446244477173 77.64727540500735,257.36892488954345 148,238 C 218.35272459499265,218.63107511045655 320.2345360824742,138.70876288659792 388,122 C 455.7654639175258,105.29123711340208 489.41458026509576,151.7960235640648 532,183 C 574.5854197349042,214.2039764359352 626.1071428571429,230.10714285714286 690,214 C 753.8928571428571,197.89285714285714 830.1568483063328,149.77540500736376 894,154 C 957.8431516936672,158.22459499263624 1009.2654639175257,214.79123711340202 1067,239 C 1124.7345360824743,263.208762886598 1188.7812960235642,255.059646539028 1252,239 C 1315.2187039764358,222.940353460972 1377.609351988218,198.970176730486 1440,175 C 1440,175 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587a66" class="transition-all duration-300 ease-in-out delay-150 path1"></path>
+          <path d="M 0,700 C 0,700 0,350 0,350 C 71.30430780559647,316.91347569955815 142.60861561119293,283.82695139911635 209,287 C 275.39138438880707,290.17304860088365 336.86984536082474,329.6056701030928 387,340 C 437.13015463917526,350.3943298969072 475.912002945508,331.75036818851254 525,321 C 574.087997054492,310.24963181148746 633.4821428571429,307.39285714285717 698,315 C 762.5178571428571,322.60714285714283 832.1594256259204,340.6782032400589 901,337 C 969.8405743740796,333.3217967599411 1037.8801546391753,307.89432989690727 1099,323 C 1160.1198453608247,338.10567010309273 1214.3199558173785,393.74447717231226 1270,405 C 1325.6800441826215,416.25552282768774 1382.8400220913109,383.12776141384387 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587a88" class="transition-all duration-300 ease-in-out delay-150 path2"></path>
+          <path d="M 0,700 C 0,700 0,525 0,525 C 59.88530927835052,517.2028718703976 119.77061855670104,509.4057437407953 175,524 C 230.22938144329896,538.5942562592047 280.80283505154637,575.5798969072165 337,577 C 393.19716494845363,578.4201030927835 455.0180412371135,544.2746686303386 527,546 C 598.9819587628865,547.7253313696614 681.1250000000001,585.3214285714287 746,573 C 810.8749999999999,560.6785714285713 858.4819587628865,498.4396170839469 911,470 C 963.5180412371135,441.5603829160531 1020.9471649484537,446.9201030927835 1073,461 C 1125.0528350515463,475.0798969072165 1171.729381443299,497.87997054491905 1232,510 C 1292.270618556701,522.120029455081 1366.1353092783506,523.5600147275404 1440,525 C 1440,525 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#00587aff" class="transition-all duration-300 ease-in-out delay-150 path3"></path></svg>
+            </div>
+            </section>
+        </div>
         </div>
     </main>
-
+    <img src="./src/topbtn.png" alt="" srcset="" class="topbtn">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="witch.js"></script>
-    <script src="god.js"></script>
-    <script src="menu.js"></script>
+    <script src="./js/witch.js"></script>
+    <script src="./js/topbtn.js"></script>
+    <script src="./js/god.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
