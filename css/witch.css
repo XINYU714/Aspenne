@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", "sans-serif";
+  /* background: url("../src/test.webp"); */
+  background: url("../src/witchbg1.png");
+  background-size: contain;
+  background-repeat: repeat;
+  color: #d3cfcf;
+}
+#witch {
+  position: relative;
+  overflow: hidden;
+}
+#witch .main_witch {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#witch .mainbg {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+#witch .moon,
+#witch .front {
+  position: absolute;
+  width: 100%;
+  z-index: 6;
+}
+#witch .witchgirl {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  z-index: 7;
+}
+#witch .fttree {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+#witch .midtree {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 4;
+}
+#witch .bktree {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+#witch .maintext {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  z-index: 100;
+  left: 10%;
+  top: 20%;
+  opacity: 0;
+}
+#witch .overview {
+  position: absolute;
+  bottom: 3%;
+  transform: translate(-50%);
+  left: 50%;
+  width: 100%;
+  z-index: 10;
+  line-height: 2;
+  text-align: center;
+}
+.place {
+  position: relative;
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../src/bgd1.webp"), url("../src/bgd2.webp");
+  background-size: 15%;
+  background-position: bottom right, top left;
+  background-repeat: no-repeat;
+}
+.place .placeContent {
+  line-height: 2;
+}
+.place .secondpart {
+  margin-top: 10%;
+}
+#closeeye {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+#closeeye .closeeyehead {
+  position: relative;
+  width: 100%;
+  transform: scale(0.8);
+}
+#closeeye .closeeyeTitle {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 45%;
+  z-index: 5;
+  text-align: center;
+}
+#closeeye .righthand {
+  position: absolute;
+  width: 100%;
+  transform: scale(0.8);
+}
+#closeeye .lefthand {
+  position: absolute;
+  width: 100%;
+  transform: scale(0.8);
+}
+#book {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+}
+#book .bookContent {
+  line-height: 2.5;
+}
+
+#book .bookphoto {
+  margin-right: 1rem;
+  flex: 3 1;
+}
+
+#book .booktext {
+  flex: 6 1;
+}
+
+/* break ponit */
+@media (max-width: 1366px) {
+}
+@media (max-width: 1280px) {
+  .pin .attack {
+    transform: scale(0.8);
+  }
+  .pin .attackhand {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  #book {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 415px) {
+  .bookimg {
+    transform: scale(0.8);
+  }
+}

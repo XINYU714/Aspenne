@@ -1,0 +1,236 @@
+#intro {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../src/bgd2-2.webp"), url("../src/bgd2.webp"),
+    url("../src/trialbgx1366.webp");
+  background-size: 12%, 12%, contain;
+  background-repeat: no-repeat;
+  background-position: top right, top left, bottom;
+}
+#intro .introtext {
+  position: relative;
+  top: 15%;
+  text-align: center;
+  z-index: 50;
+}
+#intro .libra {
+  max-width: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: -10%;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  /* background-color: #334c86; */
+}
+.container #panel-con {
+  position: relative;
+  overflow: hidden;
+}
+.container .full {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.fire {
+  /* background: url(''); */
+}
+.fire > div {
+  background: url("../src/firevideo2.gif") no-repeat center;
+}
+.fire .fitl {
+  position: relative;
+  text-align: center;
+  top: 30%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fire .firetext {
+  position: relative;
+  top: 30%;
+  text-align: center;
+  line-height: 2.5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fire .firevideo {
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.water {
+  position: relative;
+  color: #d3cfcf;
+}
+.waterbg {
+  position: absolute;
+  bottom: -5%;
+  transform: scale(1.2);
+  width: 100%;
+}
+.water .wttl {
+  position: relative;
+  top: 20%;
+  left: 15%;
+  z-index: 2;
+}
+.water .watertext {
+  position: relative;
+  top: 23%;
+  left: 15%;
+  max-width: 80%;
+  z-index: 2;
+}
+.tear .tearbg {
+  position: absolute;
+  max-width: 213px;
+  width: 100%;
+  background-image: url("../src/tearsprite-415.webp");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  overflow: hidden;
+  height: 100%;
+  opacity: 0.8;
+  top: 10%;
+  right: 10%;
+  transform: scale(2);
+}
+.tear .trtl {
+  position: relative;
+  top: 35%;
+  left: 10%;
+  z-index: 50;
+}
+.tear .teartext {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  max-width: 550px;
+  z-index: 50;
+}
+.pin {
+  /* background-color: #131824; */
+  color: #d3cfcf;
+  position: relative;
+  width: 100%;
+}
+.pin .attack {
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  overflow: hidden;
+  z-index: 5;
+}
+.pin .attackhand {
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  overflow: hidden;
+}
+.pin .pintl {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 50;
+  margin: 1em;
+}
+.pin .pintext {
+  position: absolute;
+  margin: 1em;
+  top: 40%;
+  left: 15%;
+  z-index: 50;
+}
+.weight {
+  position: relative;
+  background-image: url("src/bgd1.webp"), url("src/bgd2.webp");
+  background-size: 10%;
+  background-position: top 55% right, top left;
+  background-repeat: no-repeat;
+}
+.weight .whtl {
+  position: relative;
+  text-align: center;
+  margin-top: 15%;
+}
+.weight .weighttext {
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+.weight .weightwitch {
+  position: absolute;
+  transform: scale(1.5);
+  cursor: pointer;
+  z-index: 5;
+  top: 0%;
+  right: 100%;
+  opacity: 0;
+}
+.weight > a {
+  scroll-behavior: smooth;
+}
+/* break ponit */
+@media (max-width: 1366px) {
+  .tear .tearbg {
+    transform: scale(2);
+  }
+}
+@media (max-width: 1280px) {
+  .tear .tearbg {
+    transform: scale(1.5);
+  }
+}
+@media (max-width: 992px) {
+  .tear .trtl {
+    top: 15%;
+    left: 10%;
+  }
+  .tear .teartext {
+    top: 20%;
+    left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  #intro,
+  .container .full {
+    height: 50vh;
+  }
+  .tear .tearbg {
+    transform: scale(1);
+    top: 20%;
+    right: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .main_witch .overview {
+    bottom: 0%;
+  }
+  #intro {
+    background-image: url("src/bgd2-2.webp"), url("src/bgd2.webp"),
+      url("src/trialbgx576.webp");
+  }
+  #intro .libra {
+    display: none;
+  }
+  #intro .introtext {
+    top: 65%;
+  }
+  .weight .weightwitch {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 415px) {
+}
+.box {
+  opacity: 0;
+  transform: rotate(0deg);
+}
