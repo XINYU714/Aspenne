@@ -27,11 +27,13 @@ function leaveDl() {
 /*anne say*/
 var introText = document.querySelector(".gameintro");
 function showintro() {
-  gsap.from(".gameintro", { opacity: 0, duration: 1.2 });
+  gsap.to(".gameintro", { opacity: 1, duration: 0.5 });
   introText.style.display = "block";
 }
 function closeintro() {
+  gsap.to(".gameintro", { opacity: 0 });
   introText.style.display = "none";
 }
+setTimeout(closeintro, 1200);
 document.querySelector(".gameintro").onclick = () => closeintro();
 document.querySelector(".mainrole").onclick = () => showintro();
