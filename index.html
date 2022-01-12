@@ -24,20 +24,20 @@
         <a href="history.html"><img src="src/daily2.webp" alt="2" srcset=""  width="370" height="286" loading='lazy' ></a>
         <a href="witch.html"><img src="src/witchunt2.webp" alt="3" srcset=""  width="370" height="286" loading='lazy' ></a>
       </div>
-        <img src="src/menuv3.webp" alt="bg" srcset="" class="fly">
+        <img src="src/menuv3.webp" alt="bg" srcset="" class="fly lazy" width="1930" height="900">
   </div>
   <div class="nav">
-    <div id="menu" class="menubtn"><img src="src/Menuicon.webp" alt="" srcset=""></div>
+    <div id="menu" class="menubtn"><img src="src/Menuicon.webp" alt="Menu" srcset="" width="61" height="21"></div>
   </div>  
   <section class="main">
       <picture>
-        <source media="(max-width:576px)" srcset="./src/indexbgx414.png" class="mbg" width="414"height="750">
-        <img src="./src/indexbg.png" alt="mbg" class="mbg" loading='lazy'>
+        <source media="(max-width:576px)" srcset="./src/indexbgx414.png" class="mbg" width="414"height="518">
+        <img src="./src/indexbg.png" alt="mbg" class="mbg" loading='lazy' width="1366" height="820"> 
       </picture>
       <img src="./src/titlex1366.webp" alt="title" class="title" >
       <div id="anne" class="mainrole"></div>
-       <a href="#"> <img src="./src/dl.png" alt="download" class="download"></a>
-      <img src="./src/intro.png" alt="gameintro" class="gameintro">
+       <a href="#"> <img src="./src/dl.png" alt="download" class="download lazy" width="340" height="90"></a>
+      <img src="./src/intro.png" alt="gameintro" class="gameintro lazy" width="715" height="730">
       <div class="linear"></div>
     </section>
       <section class="info">
@@ -45,19 +45,19 @@
             <lite-youtube videoid="qKE6ldmfWhY" class="yt"></lite-youtube>
           </div>
           <div class="team">
-            <div class="person"> <img src="src/n1.webp" alt="鄭欣瑜" srcset="" class="number">
+            <div class="person"> <img src="src/n1.webp" alt="鄭欣瑜" srcset="" class="number lazy" width="180" height="180">
               <div class="midtext">鄭欣瑜</div>
               <p class="midtext">企劃/網頁</p>
             </div>
-            <div class="person"><img src="src/n2.webp" alt="陳泓予" srcset="" class="number">
+            <div class="person"><img src="src/n2.webp" alt="陳泓予" srcset="" class="number lazy" width="180" height="180">
               <div class="midtext">陳泓予</div>
               <p class="midtext">美術/動畫</p>
             </div>
-            <div class="person"><img src="src/n3.webp" alt="許曜程" srcset="" class="number">
+            <div class="person"><img src="src/n3.webp" alt="許曜程" srcset="" class="number lazy" width="180" height="180">
               <div class="midtext">許曜程</div>
               <p class="midtext">美術/動畫</p>
             </div>
-            <div class="person"><img src="src/n4.webp" alt="莊耀斌" srcset="" class="number">
+            <div class="person"><img src="src/n4.webp" alt="莊耀斌" srcset="" class="number lazy" width="180" height="180">
               <div class="midtext">莊耀斌</div>
               <p class="midtext">遊戲程式</p></div>
             </div>
@@ -79,10 +79,12 @@
               <p class="smtext">嘉義大學數位系Aspenne&copy;</p>
             </div>
       </section>    
-      <img src="./src/topbtn.png" alt="" srcset="" class="topbtn">
+      <img src="https://via.placeholder.com/145x140" data-src="./src/topbtn.png" alt="" srcset="" class="topbtn lazy" width="145" height="140">
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js" integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/lazy.js"></script>
     <script src="./js/resize.js"></script>
     <script src="./js/anne.js"></script>
     <script src="./js/index.js"></script>
