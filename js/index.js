@@ -4,9 +4,10 @@ gsap.from(" .mbg", { duration: 2, opacity: 0 }, 1);
 gsap.from(".mainrole", { duration: 2, opacity: 0 }, 3);
 var start = gsap.timeline();
 start
-  .from(
+  .fromTo(
     ".title",
-    { y: -50, xPercent: -50, yPercent: -50, duration: 2, opacity: 0 },
+    { xPercent: -50, yPercent: -50, y: -50, opacity: 0 },
+    { xPercent: -50, yPercent: -50, y: 0, duration: 2, opacity: 1 },
     2
   )
   .fromTo(
