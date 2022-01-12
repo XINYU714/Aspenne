@@ -59,21 +59,20 @@ gsap.from(".drinkingt1", {
     scrub: 0.8,
   },
 });
-gsap.from(drinkingtext, {
+gsap.to(drinkingtext, {
   ease: Power0.easeOut,
-  opacity: 0,
-  y: "40%",
-  duration: 1.8,
+  opacity: 1,
+  y: "-40%",
+  duration: 1.5,
   scrollTrigger: {
     trigger: drinkingtext,
     start: "top center",
-    // end: "top center",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
     // markers: true,
   },
 });
 
-let dkshow = gsap.timeline();
+var dkshow = gsap.timeline();
 const drinkingshow = window.matchMedia("(max-width: 768px)");
 function drinkingTextChange(drinkingshow) {
   if (drinkingshow.matches) {
@@ -86,7 +85,7 @@ function drinkingTextChange(drinkingshow) {
         trigger: ".drinkingt1",
         start: "top center",
         end: "top center",
-        toggleActions: "play none restart reset",
+        toggleActions: "play none restart none",
         scrub: 0.8,
       },
     });
