@@ -50,6 +50,7 @@ section.main {
   opacity: 1;
   overflow: hidden;
   width: 52vw;
+  height: auto;
   /* background: rgba(19, 19, 19, 0.31); */
   background-size: inherit;
   cursor: pointer;
@@ -58,6 +59,7 @@ section.main {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 340px;
+  height: auto;
   left: 50%;
   top: 95%;
   z-index: 5;
@@ -106,9 +108,10 @@ section.info {
 }
 .team .number {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   border-radius: 100%;
   padding: 0 2.3rem;
+  height: auto;
 }
 .info .under {
   text-align: center;

@@ -17,11 +17,11 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: auto;
 }
 #witch .mainbg {
   position: relative;
   width: 100%;
+  height: auto;
   object-fit: cover;
   z-index: 2;
 }
@@ -36,10 +36,12 @@ body {
   position: absolute;
   top: 10%;
   z-index: 7;
+  height: auto;
 }
 #witch .fttree {
   position: absolute;
   width: 100%;
+  height: auto;
   z-index: 5;
 }
 #witch .midtree {
@@ -97,11 +99,13 @@ body {
 #closeeye .closeeyehead {
   position: relative;
   width: 100%;
+  height: auto;
   transform: scale(0.8);
 }
 #closeeye .closeeyeTitle {
   position: absolute;
   width: 80%;
+  height: auto;
   left: 10%;
   top: 45%;
   z-index: 5;
@@ -110,11 +114,13 @@ body {
 #closeeye .righthand {
   position: absolute;
   width: 100%;
+  height: auto;
   transform: scale(0.8);
 }
 #closeeye .lefthand {
   position: absolute;
   width: 100%;
+  height: auto;
   transform: scale(0.8);
 }
 #book {
@@ -127,6 +133,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 5%;
+}
+.bookimg {
+  max-width: 100%;
+  height: auto;
 }
 #book .bookContent {
   line-height: 2.5;

@@ -16,6 +16,7 @@
 }
 #intro .libra {
   max-width: 100%;
+  height: auto;
   position: absolute;
   overflow: hidden;
   bottom: -10%;
@@ -30,15 +31,15 @@
 .container #panel-con {
   position: relative;
   overflow: hidden;
+  /* height: 100vh; */
 }
 .container .full {
   position: relative;
   height: 100vh;
+  /* height: 100%; */
   overflow: hidden;
 }
-.fire {
-  /* background: url(''); */
-}
+
 .fire > div {
   background: url("../src/firevideo2.gif") no-repeat center;
 }
@@ -63,32 +64,38 @@
   z-index: -5;
   position: absolute;
   top: 0;
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  /* min-width: 100%;
+  min-height: 100%; */
 }
 .water {
   position: relative;
   color: #d3cfcf;
 }
-.waterbg {
-  position: absolute;
-  bottom: -5%;
-  transform: scale(1.2);
-  width: 100%;
-}
+
 .water .wttl {
   position: relative;
   top: 20%;
   left: 15%;
   z-index: 2;
 }
-.water .watertext {
+.watertext {
   position: relative;
   top: 23%;
   left: 15%;
   max-width: 80%;
   z-index: 2;
 }
+.water .watervideo {
+  z-index: -5;
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  /* min-width: 100%;
+  min-height: 100%; */
+  object-fit: fill;
+}
+
 .tear .tearbg {
   position: absolute;
   max-width: 213px;
@@ -166,19 +173,23 @@
   top: 10%;
   text-align: center;
 }
-.weight .weightwitch {
+.weight .weightvideo {
+  z-index: -5;
   position: absolute;
-  transform: scale(1.5);
-  cursor: pointer;
-  z-index: 5;
+  overflow: hidden;
   top: 0%;
-  right: 100%;
-  opacity: 0;
-}
-.weight > a {
-  scroll-behavior: smooth;
+  object-fit: fill;
+  max-width: 100%;
+  margin: 0 auto;
+  /* min-width: 100%;
+  min-height: 100%; */
 }
 /* break ponit */
+@media (max-width: 1560px) {
+  .weight .weightvideo {
+    transform: scale(0.75);
+  }
+}
 @media (max-width: 1366px) {
   .tear .tearbg {
     transform: scale(2);
@@ -209,14 +220,17 @@
     top: 20%;
     right: 5%;
   }
+  .pin .pintext {
+    top: 45%;
+  }
 }
 @media (max-width: 576px) {
   .main_witch .overview {
     bottom: 0%;
   }
   #intro {
-    background-image: url("src/bgd2-2.webp"), url("src/bgd2.webp"),
-      url("src/trialbgx576.webp");
+    background-image: url("../src/bgd2-2.webp"), url("../src/bgd2.webp"),
+      url("../src/trialbgx576.webp");
   }
   #intro .libra {
     display: none;
@@ -224,8 +238,11 @@
   #intro .introtext {
     top: 65%;
   }
-  .weight .weightwitch {
-    transform: scale(0.5);
+  .weight .whtl {
+    top: 20%;
+  }
+  .weight .weighttext {
+    top: 35%;
   }
 }
 @media (max-width: 415px) {

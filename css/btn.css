@@ -6,6 +6,7 @@
   overflow: hidden;
   top: 80%;
   width: 8vw;
+  height: auto;
   cursor: pointer;
   z-index: 50;
 }
@@ -33,5 +34,11 @@
 @media screen and (max-width: 576px) {
   .topbtn {
     width: 15vw;
+  }
+}
+
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
   }
 }
