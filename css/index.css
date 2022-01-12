@@ -23,7 +23,6 @@ section.main {
   left: 50%;
   top: 18%;
   z-index: 5;
-  /* width: 750px; */
   max-width: 47.5vw;
   height: auto;
 }
