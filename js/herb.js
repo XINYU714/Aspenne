@@ -28,12 +28,13 @@ function prebntEvent() {
   if (index < 0) {
     index = imgArr.length - 1;
   }
-  gsap.fromTo(
-    ".herbct",
-    { opacity: 0 },
-    { opacity: 1, duration: 1, ease: Power2.easeOut }
-  );
   herbimg.src = imgArr[index];
+  // gsap.fromTo(
+  //   ".herbct",
+  //   { opacity: 0 },
+  //   { opacity: 1, duration: 1, ease: Power2.easeOut }
+  // ),
+  //   1;
 }
 function nextbtnEvent() {
   index++;
