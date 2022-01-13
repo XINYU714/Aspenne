@@ -3,8 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", "sans-serif";
-  /* background: url("../src/test.webp"); */
-  background: url("../src/witchbg1.png");
+  background: url("../src/witchbg1.webp");
   background-size: contain;
   background-repeat: repeat;
   color: #d3cfcf;

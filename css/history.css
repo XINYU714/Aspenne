@@ -143,12 +143,8 @@ body {
   margin: 1rem auto;
 }
 .herb .btnbox {
-  /* display: flex; */
   display: block;
   /* max-width: 100%; */
-  /* justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap; */
   margin: 0.75rem auto;
 }
 .btnbox .herbbtn {
