@@ -41,7 +41,9 @@
 }
 
 .fire > div {
-  background: url("../src/firevideo2.gif") no-repeat center;
+  /* background: url("../src/firevideo2.gif") no-repeat center; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .fire .fitl {
   position: relative;
@@ -100,7 +102,7 @@
   position: absolute;
   max-width: 213px;
   width: 100%;
-  background-image: url("../src/tearsprite-415.webp");
+  /* background-image: url("../src/tearsprite-415.webp"); */
   background-repeat: no-repeat;
   background-position: 0 50%;
   overflow: hidden;
@@ -158,7 +160,7 @@
 }
 .weight {
   position: relative;
-  background-image: url("src/bgd1.webp"), url("src/bgd2.webp");
+  /* background-image: url("src/bgd1.webp"), url("src/bgd2.webp"); */
   background-size: 10%;
   background-position: top 55% right, top left;
   background-repeat: no-repeat;

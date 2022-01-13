@@ -78,7 +78,7 @@ body {
   padding: 15%;
   display: flex;
   justify-content: center;
-  background-image: url("../src/bgd1.webp"), url("../src/bgd2.webp");
+  /* background-image: url("../src/bgd1.webp"), url("../src/bgd2.webp"); */
   background-size: 15%;
   background-position: bottom right, top left;
   background-repeat: no-repeat;
