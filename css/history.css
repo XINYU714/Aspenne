@@ -6,6 +6,7 @@ body {
   background-image: url("../src/historybg.webp");
   background-size: contain;
   max-width: 100%;
+  overflow-x: hidden;
 }
 .main {
   position: relative;
@@ -245,6 +246,9 @@ body {
   text-align: center;
   background-image: url("");
 }
+.traffic > .traffica {
+  overflow: hidden;
+}
 .traffic .trafficimg {
   display: flex;
   justify-content: space-between;
@@ -268,15 +272,21 @@ body {
   margin-top: 60px;
 }
 /*酒類文字*/
-.drinking .drinkingtl {
+.drinking > .drinking-wrapper {
+  display: flex;
+  flex-direction: column;
   margin-left: 10%;
+}
+.drinking-wrapper > .drinkingtl {
+  line-height: 42px;
   opacity: 0;
 }
-.drinking .drinkingct {
-  line-height: 2;
-  margin-left: 12%;
-  margin-top: 36px;
+.drinking-wrapper > .drinkingct {
+  line-height: 40px;
+  margin-top: 60px;
+  padding-left: 32px;
   opacity: 0;
+  max-width: 280px;
 }
 .drinking .down {
   position: absolute;
@@ -298,7 +308,7 @@ body {
   max-width: 100%;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 45%;
   left: 50%;
 }
 .drinkingt2 {
@@ -325,7 +335,8 @@ body {
   z-index: 5;
   overflow: hidden;
   width: 100%;
-  top: 20%;
+  /* top: 20%; */
+  bottom: 0;
   left: 0;
   height: auto;
 }
@@ -428,18 +439,24 @@ body {
     background-size: contain;
     background-position: center bottom;
   }
-  .drinking .drinkingtl {
-    margin-left: 10%;
+
+  .drinking .down {
+    transform: scale(0.6);
+    top: 8%;
   }
-  .drinking .drinkingct {
-    margin-left: 8%;
+  .drinkingt1 {
+    top: 53%;
   }
   .drinkingt2 {
     top: 70%;
   }
-  .drinking .down {
-    transform: scale(0.6);
-    top: -5%;
+  .drinking > .drinking-wrapper {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .drinking-wrapper > .drinkingct {
+    margin-top: 40px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -480,7 +497,7 @@ body {
   }
   .drinking .down {
     transform: scale(0.5);
-    top: -10%;
+    top: 0%;
   }
 }
 @media (max-width: 415px) {
@@ -495,17 +512,5 @@ body {
   }
   .drinkingt2 {
     top: 68%;
-  }
-  .drinking .drinkingtl {
-    margin: 10% 0 0 2%;
-  }
-  .drinking .drinkingct {
-    line-height: 2;
-    margin: 5% 0 0 2%;
-  }
-
-  .drinking .down {
-    transform: scale(0.4);
-    top: -20%;
   }
 }
