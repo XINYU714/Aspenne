@@ -90,7 +90,7 @@
           height="500"
         />
       </div>
-      <p class="timesub midtext">其正餐為早上10點，晚餐為5點</p>
+      <p class="timesub midtext">正餐為早上10點，晚餐為5點</p>
     </section>
     <!-- 麵包 -->
     <section class="bread section-wrapper margin-gap">
@@ -284,7 +284,7 @@
             height="429"
           />
         </div>
-        <div>
+        <div style="overflow-x: hidden">
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4.2'%3E%3C/svg%3E"
             data-src="src\trafficA.png"
@@ -300,19 +300,21 @@
 
     <!-- 酒 -->
     <section class="drinking">
-      <div class="drinkingtl bigtext">「只喝酒?不喝水?」</div>
-      <div class="drinkingct midtext">
-        中世紀乾淨的水源不易取得<br />也沒有喝開水的習慣<br />酒精飲料易保存
+      <div class="drinking-wrapper">
+        <div class="drinkingtl bigtext">「只喝酒?不喝水?」</div>
+        <div class="drinkingct midtext">
+          中世紀乾淨水源取得不易<br />人們也沒有喝開水的習慣<br />而易保存的酒精飲料成為中世紀常見的飲品
+        </div>
       </div>
       <div
         class="down lazy"
         data-bg="./src/bucket.png"
         data-bg-hidpi="./src/bucket.png"
       ></div>
-      <div class="drinkingt1 midtext">
+      <div class="drinkingt1 smtext">
         啤酒更受平民歡迎，大部分人把啤酒作為飲食的一部分
       </div>
-      <div class="drinkingt2 midtext">
+      <div class="drinkingt2 smtext">
         貴族飲用第一次擠壓出來的上品酒<br />平民則是二三次擠壓的葡萄酒<br />而最窮的人只能喝得起葡萄製成的黑醋
       </div>
       <picture>
@@ -377,7 +379,7 @@
     <script src="./js/history.js" defer></script>
     <script src="./js/wine.js" defer></script>
     <script src="./js/herb.js" defer></script>
-    <script src="./js/topbtn.js"></script>
+    <script src="./js/topbtn.js" defer></script>
     <script src="./js/menu.js" defer></script>
   </body>
 </html>
