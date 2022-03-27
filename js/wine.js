@@ -1,19 +1,19 @@
 let frame_count = 2,
   offset_value = 150;
-let drinkingtext = [".drinkingtl", ".drinkingct"];
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".down", {
   backgroundPosition: -offset_value * frame_count * 2 + "px 0%",
   ease: "steps(" + frame_count + ")",
   scrollTrigger: {
     trigger: ".down",
-    pin: true,
+    // pin: true,
     pinspacing: true,
     toggleActions: "play none restart reset",
-    start: "top center",
-    end: "+=" + 0.5 * offset_value,
+    start: "center center",
+    end: "+=" + 0.3 * offset_value,
     scrub: true,
-    snap: true,
+    // snap: true,
+    // markers: true,
   },
 });
 
@@ -32,19 +32,6 @@ gsap.to(".drinking2", {
   duration: 1.5,
 });
 gsap.to(".drinking3", { repeat: -1, yoyo: true, y: "+=10", duration: 3 });
-gsap.from(drinkingtext, {
-  ease: Power0.easeOut,
-  opacity: 0,
-  y: "30%",
-  duration: 1.2,
-  scrollTrigger: {
-    trigger: ".drinking",
-    toggleActions: "play none restart reset",
-    start: "top center",
-    end: "bottom center",
-    delay: 0.5,
-  },
-});
 gsap.from(".drinkingt1", {
   ease: Power0.easeOut,
   opacity: 0,
@@ -53,25 +40,36 @@ gsap.from(".drinkingt1", {
   scrollTrigger: {
     trigger: ".drinkingt1",
     start: "top center",
-    end: "bottom center",
+    end: "top center",
     toggleActions: "play none restart none",
-    // markers: true,
+
     scrub: 0.8,
   },
 });
-gsap.to(drinkingtext, {
+gsap.to(".drinkingtl", {
   ease: Power0.easeOut,
   opacity: 1,
   y: "-40%",
   duration: 1.5,
   scrollTrigger: {
-    trigger: drinkingtext,
+    trigger: ".drinkingtl",
     start: "top center",
     toggleActions: "play none restart reset",
     // markers: true,
   },
 });
-
+gsap.to(".drinkingct", {
+  ease: Power0.easeOut,
+  opacity: 1,
+  y: "-30%",
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".drinkingct",
+    start: "top center",
+    toggleActions: "play none restart reset",
+    // markers: true,
+  },
+});
 var dkshow = gsap.timeline();
 const drinkingshow = window.matchMedia("(max-width: 768px)");
 function drinkingTextChange(drinkingshow) {
@@ -79,7 +77,7 @@ function drinkingTextChange(drinkingshow) {
     dkshow.from(".drinkingt2", {
       ease: Power0.easeOut,
       opacity: 0,
-      y: "40%",
+      y: "50%",
       duration: 2,
       scrollTrigger: {
         trigger: ".drinkingt1",
@@ -96,7 +94,7 @@ function drinkingTextChange(drinkingshow) {
       y: "40%",
       duration: 2,
       scrollTrigger: {
-        trigger: ".drinkingt2",
+        trigger: ".drinkingt1",
         start: "top center",
         end: "top center",
         toggleActions: "play none restart reset",
