@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Aspenne,獵巫,女巫,中世紀遊戲,畢業專題" />
+    <meta
+      name="description"
+      content="國立嘉義大學111級數位系畢業專題製作—Aspenne。Aspenne是一款以女巫視角來描述獵巫時期(Witch-hunt)的中世紀遊戲。"
+    />
+    <title>獵巫Witch-hunt</title>
+    <link rel="icon" href="src/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/text.css" />
+    <link rel="stylesheet" href="./css/witch.css" />
+    <link rel="stylesheet" href="./css/godintro.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/btn.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="myNav" class="push">
+      <a href="#" class="closebtn" id="close">&times;</a>
+      <div class="overlay-content">
+        <div class="nav-wrapper">
+          <a href="index.html"
+            ><img src="src/nav_aspenne.png" alt="1" loading="lazy"
+          /></a>
+          <a href="history.html"
+            ><img src="src/nav_daily.png" alt="2" loading="lazy"
+          /></a>
+        </div>
+        <a href="witch.html" class="witch-wrap"
+          ><img src="src/nav_witchhunt.png" alt="3" loading="lazy"
+        /></a>
+      </div>
+      <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 193 90'%3E%3C/svg%3E"
+        data-src="src/menuv3.webp"
+        alt="bg"
+        class="fly lazy"
+        width="1930"
+        height="900"
+      />
+    </div>
+    <div class="nav">
+      <div id="menu" class="menubtn">
+        <img src="src/Menuicon.webp" alt="Menu" width="61" height="21" />
+      </div>
+    </div>
+
+    <main>
+      <div class="witchbg"></div>
+      <!-- 主視覺 -->
+      <div id="witch">
+        <div class="main_witch">
+          <picture>
+            <source media="(max-width:415px)" srcset="src/witchunt-415.webp" />
+            <source media="(max-width:576px)" srcset="src/witchunt-576.webp" />
+            <source media="(max-width:992px)" srcset="src/witchunt-992.webp" />
+            <img src="src/witchunt.webp" alt="witchunt" class="maintext" />
+          </picture>
+
+          <img
+            src="src/witch.webp"
+            alt="1"
+            class="witchgirl"
+            width="150"
+            height="auto"
+          />
+          <img src="src/moon.webp" alt="2" class="moon" width="1024" />
+          <img
+            src="src/mainWitch_front2.webp"
+            alt="3"
+            class="front"
+            width="1024"
+          />
+          <img
+            src="src/mainWitch_fronttree.webp"
+            alt="4"
+            class="fttree"
+            width="1024"
+          />
+          <img
+            src="src/mainWitch_midtree.webp"
+            alt="5"
+            class="midtree"
+            width="1024"
+          />
+          <img
+            src="src/mainWitch_backtree.webp"
+            alt="5"
+            class="bktree"
+            width="1024"
+          />
+
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="src/mainWitch_bg2-768.webp"
+            />
+            <img
+              src="src/mainWitch_bg2.webp"
+              alt="bg"
+              class="mainbg"
+              width="1024"
+              height="1029"
+            />
+          </picture>
+        </div>
+        <div class="overview smtext">
+          從12世紀開始，經濟不濟、社會矛盾以及瘟疫疾病等現象接踵而來，人們對於未知的恐懼與巫術的懼怕，導致矛頭轉嫁給女巫，造成當時的獵巫風潮
+          ，尤其在16世紀獵巫運動最高峰
+        </div>
+      </div>
+      <section class="section-wrapper">
+        <div
+          class="place lazy"
+          data-bg-multi="url(./src/bgd1.webp), 
+            url(./src/bgd2.webp)"
+          data-bg-multi-hidpi="url(./src/bgd1.webp), 
+            url(./src/bgd2.webp)"
+        >
+          <div class="placetext">
+            <div class="midtext">審判女巫的機構</div>
+            <div class="placeContent smtext">
+              宗教裁判所出現之前，教會主教負責查找異端並交由世俗法庭判刑，在13世紀期間，設立了特殊司法機構，專門審訊與異教徒或異端有關的案件，名叫「宗教裁判所」，其實原本只是處理一些違反常倫的小事件，但隨著14世紀因巫術的恐慌四起，使得宗教裁判所加重對女巫的注意
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="closeeye">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E"
+          data-src="src/head.webp"
+          alt="head"
+          class="closeeyehead lazy"
+          width="1478"
+          height="1080"
+        />
+        <div class="closeeyeTitle midtext">
+          檢舉女巫成功能獲得報酬，誰不蒙蔽自己的雙眼呢?
+        </div>
+
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E"
+          data-src="src/rhand.webp"
+          alt="righthand"
+          srcset=""
+          class="righthand lazy"
+          width="1478"
+          height="1080"
+        />
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E"
+          data-src="src/lhand.webp"
+          alt="lefthand"
+          srcset=""
+          class="lefthand lazy"
+          width="1478"
+          height="1080"
+        />
+      </section>
+
+      <!-- 女巫之垂-->
+      <section id="book" class="section-wrapper">
+        <div class="bookphoto">
+          <picture>
+            <source
+              media="(max-width:576px)"
+              data-srcset="src/bookpic-576.webp"
+              alt="女巫之槌"
+            />
+            <source
+              media="(max-width:768px)"
+              data-srcset="src/bookpic-768.webp"
+              alt="女巫之槌"
+            />
+            <img
+              src="https://via.placeholder.com/350x630"
+              alt="女巫之槌"
+              data-srcset="src/bookpic.webp"
+              class="bookimg lazy"
+            />
+          </picture>
+        </div>
+        <div class="booktext">
+          <div class="bookTitle midtext">轟動當時的禁忌之書-女巫之槌</div>
+          <div class="bookContent smtext">
+            《女巫之槌》出自天主教修士兼宗教裁判官的克拉馬與司佈倫格之手
+            ，於1487年出版，是一本有關女巫條約的書，教導如何變巫術、檢驗與施行酷刑，作為世俗法庭審判的依據
+          </div>
+        </div>
+      </section>
+
+      <!-- 神意  -->
+      <section class="intro-witch">
+        <div class="intro-wrapper">
+          <div class="bigtext">神意審判</div>
+          <div class="smtext">
+            當難以分辨其真假，會由神來親自顯明，是當時獵巫常見的審判方法
+          </div>
+        </div>
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E"
+          data-src="src/librax1366.webp"
+          alt="神意審判"
+          class="libra lazy"
+          width="1600"
+          height="900"
+        />
+      </section>
+      <div class="god-container">
+        <!-- 火燒 -->
+        <section class="fire">
+          <video
+            autoplay
+            muted
+            loop
+            id="firevied"
+            data-src="./video/firevideo.mp4"
+            class="firevideo lazy"
+          >
+            <source data-src="./video/firevideo.mp4" type="video/mp4" />
+          </video>
+          <div class="fire-wrapper padding-x">
+            <div
+              class="midtext fitl fire-mask lazy"
+              data-bg="./src/firevideo2.gif"
+              data-bg-hidpi="./src/firevideo2.gif"
+            >
+              火燒檢定
+            </div>
+            <div
+              class="smtext lazy firetext fire-mask"
+              data-bg="./src/firevideo2.gif"
+              data-bg-hidpi="./src/firevideo2.gif"
+            >
+              <div>
+                常見檢定方法是手拿燒紅的鐵跑一段距離或是蒙著眼赤腳走過燒紅的犁頭，並於三天後檢查，如果有傷則說明有罪，無傷即可釋放
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 眼淚 -->
+        <section class="tear">
+          <div class="tear-wrap padding-x">
+            <div class="midtext trtl">眼淚檢定</div>
+            <div class="teartext smtext">
+              當時人們認為女巫不會有眼淚，如果被弄哭沒有眼淚，那就是女巫；如果女巫哭出眼淚，可能是魔鬼在作怪，除非確切認定為真哭，否則一樣有罪。
+            </div>
+          </div>
+          <div
+            class="tearbg lazy"
+            data-bg="./src/tearsprite.png"
+            data-bg-hidpi="./src/tearsprite.png"
+          ></div>
+        </section>
+        <!-- 針刺 -->
+        <section class="pin">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+            data-src="src/attack.webp"
+            alt="attack"
+            srcset=""
+            class="attack lazy"
+            width="600"
+            height="600"
+          />
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+            data-src="src/attackhand.webp"
+            alt="attackhand"
+            srcset=""
+            class="attackhand lazy"
+            width="600"
+            height="600"
+          />
+          <div class="pin-wrapper">
+            <div class="midtext pintl">針刺檢定</div>
+            <div class="pintext smtext">又稱witch-picking</div>
+            <div class="pintext smtext">
+              針刺時是否流血為判定標準，人們認為女巫只要與魔鬼交易會留下印記，而這些印記，無論怎麼刺它，都不會感覺到疼痛與流血
+            </div>
+          </div>
+        </section>
+        <!-- 體重  -->
+        <section class="weight">
+          <div class="weight-wrapper">
+            <div class="midtext whtl">體重檢定</div>
+            <div class="weighttext smtext">
+              傳聞女巫會用掃帚飛行所以體重很輕，但就算體重正常不能斷定，因為女巫有可能在過程中偷偷施展魔法
+              <div class=""></div>
+            </div>
+          </div>
+          <video
+            autoplay
+            muted
+            loop
+            id="weightvied"
+            data-src="./video/weightvideo.mp4"
+            class="weightvideo lazy"
+          >
+            <source data-src="./video/weightvideo.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section class="water">
+          <div class="water-wrapper">
+            <div class="midtext wttl">水淹檢定</div>
+            <div class="watertext smtext">
+              人們認為女巫體重輕的，是因為女巫與魔鬼交易會把靈魂交出，因此如果丟到水裡漂浮起來，認定有罪，反之沉至水底就是無罪
+            </div>
+          </div>
+          <video
+            autoplay
+            muted
+            loop
+            id="watervied"
+            data-src="./video/watervideo.mp4"
+            class="watervideo lazy"
+          >
+            <source data-src="./video/watervideo.mp4" type="video/mp4" />
+          </video>
+        </section>
+      </div>
+    </main>
+
+    <!-- topbtn  -->
+    <img
+      src="https://via.placeholder.com/145x140"
+      data-src="./src/topbtn.webp"
+      alt="top-btn"
+      srcset=""
+      class="topbtn lazy"
+      width="145"
+      height="140"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./js/lazy.js"></script>
+    <script src="./js/witch.js" defer></script>
+    <script src="./js/topbtn.js" defer></script>
+    <!-- <script src="./js/god.js" defer></script> -->
+    <script src="./js/god-intro.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+  </body>
+</html>
