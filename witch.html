@@ -11,18 +11,19 @@
     />
     <title>獵巫Witch-hunt</title>
     <link rel="icon" href="src/icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/text.css" />
-    <link rel="stylesheet" href="./css/witch.css" />
-    <link rel="stylesheet" href="./css/godintro.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/btn.css" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/witch.min.css" />
+    <link rel="stylesheet" href="./css/godintro.min.css" />
+    <link rel="stylesheet" href="./css/menu.min.css" />
+    <link rel="stylesheet" href="./css/btn.min.css" />
+    <link rel="stylesheet" href="./css/global.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"  />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
+      crossorigin="anonymous" 
     />
+
   </head>
   <body>
     <!-- menu -->
@@ -31,14 +32,14 @@
       <div class="overlay-content">
         <div class="nav-wrapper">
           <a href="index.html"
-            ><img src="src/nav_aspenne.png" alt="1" loading="lazy"
+            ><img src="src/nav_aspenne.png" alt="Aspenne" loading="lazy"
           /></a>
           <a href="history.html"
-            ><img src="src/nav_daily.png" alt="2" loading="lazy"
+            ><img src="src/nav_daily.png" alt="Daily" loading="lazy"
           /></a>
         </div>
         <a href="witch.html" class="witch-wrap"
-          ><img src="src/nav_witchhunt.png" alt="3" loading="lazy"
+          ><img src="src/nav_witchhunt.png" alt="Witch-hunt" loading="lazy"
         /></a>
       </div>
       <img
@@ -62,7 +63,7 @@
       <div id="witch">
         <div class="main_witch">
           <picture>
-            <source media="(max-width:415px)" srcset="src/witchunt-415.webp" />
+            <!-- <source media="(max-width:415px)" srcset="src/witchunt-415.webp" /> -->
             <source media="(max-width:576px)" srcset="src/witchunt-576.webp" />
             <source media="(max-width:992px)" srcset="src/witchunt-992.webp" />
             <img src="src/witchunt.webp" alt="witchunt" class="maintext" />
@@ -353,10 +354,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
       defer
     ></script>
-    <script src="./js/lazy.js"></script>
-    <script src="./js/witch.js" defer></script>
-    <script src="./js/topbtn.js" defer></script>
-    <script src="./js/god-intro.js" defer></script>
-    <script src="./js/menu.js" defer></script>
+    <script src="./js/lazy.min.js"></script>
+    <script src="./js/witch.min.js" defer></script>
+    <script src="./js/topbtn.min.js" defer></script>
+    <script src="./js/god-intro.min.js" defer></script>
+    <script src="./js/menu.min.js" defer></script>
   </body>
 </html>
