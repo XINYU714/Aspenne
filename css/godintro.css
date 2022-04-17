@@ -138,13 +138,15 @@
 /* weight  */
 .weight {
   position: relative;
+  padding: 200px 0;
 }
 .weight > .weight-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  padding-top: 300px;
+  /* padding-top:5 300px; */
+  padding-top: 10%;
   padding-bottom: 500px;
   max-width: 650px;
 }
@@ -155,11 +157,11 @@
   line-height: 32px;
 }
 .weight > .weightvideo {
-  z-index: -5;
+  z-index: -3;
   position: absolute;
   overflow: hidden;
   max-width: 100%;
-  height: 100%;
+  height: fit-content;
   top: 0;
 }
 
@@ -187,11 +189,14 @@
   /*
   min-height: 100%; */
   /* object-fit: fill; */
-  height: 100%;
 }
 @media (max-width: 1440px) {
   .tear > .tearbg {
     transform: scale(0.7);
+  }
+  .weight > .weight-wrapper {
+    padding-top: 0;
+
   }
 }
 @media (max-width: 768px) {
@@ -237,18 +242,24 @@
     padding-bottom: 300px;
   }
   /* weight  */
+  .weight
+  {
+    padding: 0;
+  }
   .weight > .weight-wrapper {
     max-width: 100%;
     margin: 0 8%;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 450px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  .weight > .weightvideo {
+    top: 40%;
   }
   /* water  */
   .water {
     position: relative;
-    padding-top: 150px;
-    padding-bottom: 350px;
+    padding-bottom: 300px;
   }
   .water > .water-wrapper {
     display: flex;
@@ -257,7 +268,6 @@
     margin-right: 8%;
   }
   .pin > .pin-wrapper {
-    /* max-width: 650px; */
     margin-left: 8%;
     margin-right: 8%;
   }
