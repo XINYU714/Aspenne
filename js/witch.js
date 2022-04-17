@@ -46,7 +46,7 @@ gsap.from(".overview", {
   duration: 2,
   scrollTrigger: {
     trigger: ".overview",
-    start: "top center",
+    start: "top bottom",
     toggleActions: "play none restart none",
   },
 });
