@@ -256,8 +256,8 @@
   /* water  */
   .water {
     position: relative;
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 400px;
   }
   .water > .water-wrapper {
     display: flex;

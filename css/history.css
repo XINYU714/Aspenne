@@ -455,23 +455,24 @@ body {
 }
 @media (max-width: 576px) {
   .main .maintl {
-    /* width: 60vw; */
-    /* top: 40%; */
-    top: 35%;
-    width: 280px;
-    left: 57%;
+    width: 60vw;
+    top: 38%;
+    /* top: 35%; */
+    /* width: 280px; */
+    left: 63%;
     
   }
   .main .mainobj {
-    /* width: 100%; */
-    width: unset;
-    height: 95vh;
-    left: 55%;
+    width: 100%;
+    /* width: unset; */
+    /* height: 75vh; */
+    /* transform: scale(0.9); */
+    /* left: 55%; */
   }
   .main .mainbg {
-    width: unset;
-    /* min-height: 80vw; */
-    height: 95vh;
+    /* width: unset; */
+    min-height: 80vw;
+    /* height: 80vh; */
   }
   .time .clock .clockby {
     transform: scale(0.6);

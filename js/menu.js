@@ -20,8 +20,11 @@ let menu = show.fromTo(
 );
 show.to(".push", {
   left: "0%",
-  background: "#0000004d",
   duration: 1,
+});
+show.to(".push", {
+  background: "#0000004d",
+  duration:1,
 });
 show.to(".overlay-content a", {
   opacity: 1,
@@ -32,6 +35,7 @@ show.to(".overlay-content a", {
     ease: "power2.inOut",
   },
 });
+
 menu.pause();
 
 document.querySelector("#menu").onclick = () => menu.play();
