@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 body {
   background: #0e1520;
   color: #f0f8ff;
+  overflow-x: hidden;
 }
 section.main {
-  max-width: 100%;
-  /* overflow: hidden; */
+  max-width: 100%; 
   position: relative;
 }
 .main .mbg {
@@ -28,14 +29,11 @@ section.main {
 .main .mainrole {
   position: absolute;
   width: 45vw;
-  /* height: auto; */
-  /* transform: translate(-50%, -50%); */
   top: 52.5%;
   left: 50%;
   z-index: 5;
   overflow: hidden;
   cursor: pointer;
-  /* max-width: 50%; */
 }
 .main .gameintro {
   position: absolute;
@@ -49,7 +47,6 @@ section.main {
   overflow: hidden;
   width: 52vw;
   height: auto;
-  /* background: rgba(19, 19, 19, 0.31); */
   background-size: inherit;
   cursor: pointer;
 }
@@ -63,14 +60,15 @@ section.main {
   z-index: 5;
 }
 section.info {
-  position: relative;
   z-index: 5;
 }
-.info .styleIt {
+ .info .styleIt {
   position: relative;
   width: 100%;
-  margin: 5% auto;
+  max-width: unset;
+  margin: 80px 0;
   z-index: 5;
+  cursor: pointer;
 }
 .styleIt .yt {
   position: relative;
@@ -80,43 +78,56 @@ section.info {
   height: 50vw;
 }
 .info .contact {
+  z-index: 5;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6.25rem;
+  margin-top: 60px;
 }
 .contact svg {
   margin: 0 2rem;
   width: 2rem;
   cursor: pointer;
+  color: #f0f8ff;
+}
+.contact svg:hover{
+  opacity: 0.5;
 }
 .info .team {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
+  justify-content: space-between;
   text-align: center;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 1;
   z-index: 5;
-  margin-top: 6.25rem;
-  margin-bottom: 80px;
+  padding-top: 40px;
+  border-top:1px solid #484848 ;
 }
+.team > .person{
+  flex: 0 1 20%;
+  
+}
+.team > .person:hover .number{
+  transform: translateY(-5px);
+}
+.person >p{
+  margin-top: 10px;
+}
+
 .team .number {
-  position: relative;
-  width: 100%;
+  max-width: 100%;
   border-radius: 100%;
-  padding: 0 2.3rem;
   height: auto;
+  transition: 0.5s ease-in-out;
 }
 .info .under {
   text-align: center;
   z-index: 5;
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
+  color: #b2b2b2;
+  font-size: 12px;
 }
 
 .linear {
@@ -147,22 +158,44 @@ section.info {
     width: 20vw;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .linear::after {
     height: 1000px;
   }
   .main .title {
     top: 18%;
   }
-  .main .download {
-    display: none;
-  }
   .linear {
     height: 5vh;
     z-index: 1;
   }
+
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  .main .mbg {
+    display: none;
+  }
+  .banner-bg
+  {
+    position: relative;
+    padding: 325px 0;
+    background-image: url('../src/index_bg_pc.webp');
+    background-position: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .main .title {
+    width: 55vw;
+  }
+  .main .mainrole {
+    width: 70vw;
+
+  }
+  .info .team {
+  padding-top: 20px;
+
+  }
   .linear {
     height: 2.5vh;
     z-index: 1;
@@ -171,15 +204,20 @@ section.info {
     height: 800px;
   }
   .info .team {
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 4rem;
   }
+  .team > .person
+  {
+    flex: 0 1 50%;
+  }
   .team .number {
-    max-width: 35vw;
-    padding: 1rem 2.3rem;
+    max-width: 60%;
+    margin-top: 25px;
   }
   .info .contact {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
   .main .gameintro {
     width: 80vw;
@@ -190,10 +228,5 @@ section.info {
   .info .styleIt {
     margin: 2% auto;
     z-index: 5;
-  }
-}
-@media (max-width: 415px) {
-  .team .number {
-    max-width: 45vw;
   }
 }

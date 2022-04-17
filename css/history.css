@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
   background-image: url("../src/historybg.webp");
   background-size: contain;
   max-width: 100%;
@@ -244,7 +243,6 @@ body {
   margin: 2.5% auto;
   opacity: 1;
   text-align: center;
-  background-image: url("");
 }
 .traffic > .traffica {
   overflow: hidden;
@@ -343,9 +341,6 @@ body {
 @media (max-width: 768px) {
   .main .maintl {
     left: 65%;
-  }
-  .main .mainbg {
-    max-width: 130%;
   }
   .main .mainobj {
     width: 100%;
@@ -462,13 +457,13 @@ body {
 @media (max-width: 576px) {
   .main .maintl {
     top: 40%;
-    width: 40vw;
+    width: 60vw;
   }
   .main .mainobj {
     width: 100%;
   }
   .main .mainbg {
-    min-height: 70vw;
+    min-height: 80vw;
   }
   .time .clock .clockby {
     transform: scale(0.6);

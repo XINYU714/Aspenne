@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans TC", "sans-serif";
   background: url("../src/witchbg1.webp");
   background-size: contain;
   background-repeat: repeat;
@@ -175,11 +174,18 @@ body {
   #closeeye .closeeyeTitle {
     width: 75%;
   }
+  #witch .main_witch 
+  {
+    width: 160%;
+  }
   #witch {
     margin-bottom: 120px;
   }
   #witch .overview {
     bottom: 0%;
+  }
+  #witch .maintext {
+    left: 6%;
   }
   #book {
     flex-direction: column;
