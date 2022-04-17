@@ -75,6 +75,7 @@ gsap.from(".water-wrapper", {
   duration: 1.5,
   scrollTrigger: {
     trigger: ".water-wrapper",
+    start:"top bottom",
     scrub: 0.5,
     toggleActions: "play none restart reset",
   },
@@ -99,6 +100,7 @@ gsap.to(".tearbg", {
 
 gsap.to(".attack", { duration: 1.5, yoyo: true, repeat: -1, rotation: 15 });
 const attackChange = window.matchMedia("(max-width: 768px)");
+const attacklabtop = window.matchMedia("(max-width: 1440px)");
 function myFunction(attackChange) {
   if (attackChange.matches) {
     gsap.fromTo(
@@ -115,8 +117,6 @@ function myFunction(attackChange) {
           start: "top center",
           end: "center top",
           scrub: 0.3,
-          // pin: true,
-          // markers: true,
         },
       }
     );
@@ -145,7 +145,8 @@ function myFunction(attackChange) {
         },
       }
     );
-  } else {
+  } else if(attacklabtop.matches)
+  {
     gsap.fromTo(
       ".attack",
       {
@@ -153,15 +154,54 @@ function myFunction(attackChange) {
         right: "-10%",
       },
       {
-        top: "55%",
+        top: "50%",
         right: "50%",
         scrollTrigger: {
           trigger: ".pin",
           start: "top top",
           end: "center top",
           scrub: 0.3,
-          // pin: true,
-          // markers: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".attackhand",
+      {
+        xPercent: 0,
+        yPercent: 0,
+        bottom: "0",
+        left: "-25%",
+      },
+      {
+        xPercent: 0,
+        yPercent: 0,
+        bottom: "10%",
+        left: "-15%",
+        scrollTrigger: {
+          trigger: ".pin",
+          start: "top top",
+          end: "center top",
+          scrub: 0.3,
+        },
+      }
+    );
+  }
+  else {
+    gsap.fromTo(
+      ".attack",
+      {
+        top: "30%",
+        right: "-10%",
+      },
+      {
+        top: "40%",
+        right: "50%",
+        scrollTrigger: {
+          trigger: ".pin",
+          start: "top top",
+          end: "center top",
+          scrub: 0.3,
         },
       }
     );
