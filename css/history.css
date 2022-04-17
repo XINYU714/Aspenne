@@ -333,7 +333,6 @@ body {
   z-index: 5;
   overflow: hidden;
   width: 100%;
-  /* top: 20%; */
   bottom: 0;
   left: 0;
   height: auto;
@@ -343,7 +342,7 @@ body {
     left: 65%;
   }
   .main .mainobj {
-    width: 100%;
+    /* width: 100%; */
     z-index: 100;
     bottom: 5%;
   }
@@ -456,14 +455,23 @@ body {
 }
 @media (max-width: 576px) {
   .main .maintl {
-    top: 40%;
-    width: 60vw;
+    /* width: 60vw; */
+    /* top: 40%; */
+    top: 35%;
+    width: 280px;
+    left: 57%;
+    
   }
   .main .mainobj {
-    width: 100%;
+    /* width: 100%; */
+    width: unset;
+    height: 95vh;
+    left: 55%;
   }
   .main .mainbg {
-    min-height: 80vw;
+    width: unset;
+    /* min-height: 80vw; */
+    height: 95vh;
   }
   .time .clock .clockby {
     transform: scale(0.6);
