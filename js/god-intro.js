@@ -89,10 +89,8 @@ gsap.to(".tearbg", {
   scrollTrigger: {
     trigger: ".tear",
     start: "top top",
-    // end: "+=" + frame_count * offset_value,
     end: "center top",
     scrub: 0.5,
-    // markers: true,
   },
 });
 
