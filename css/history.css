@@ -36,6 +36,10 @@ body {
   overflow: hidden;
   opacity: 0;
 }
+.main .mainobj-mob
+{
+  display: none;
+}
 /*time*/
 .time {
   position: relative;
@@ -459,11 +463,12 @@ body {
     top: 38%;
     /* top: 35%; */
     /* width: 280px; */
-    left: 63%;
-    
+    /* left: 63%; */
+    left: 60%;
   }
   .main .mainobj {
     width: 100%;
+    display: none;
     /* width: unset; */
     /* height: 75vh; */
     /* transform: scale(0.9); */
@@ -471,9 +476,23 @@ body {
   }
   .main .mainbg {
     /* width: unset; */
-    min-height: 80vw;
-    /* height: 80vh; */
+    /* min-height: 80vw; */
+    height: 72vh;
   }
+  .main .mainobj-mob
+{
+    display:block;
+    width: unset;
+    height: 72vh;
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    bottom: 5%;
+    left: 43%;
+    overflow: hidden;
+    opacity: 0;
+    /* left: 55%; */
+}
   .time .clock .clockby {
     transform: scale(0.6);
   }

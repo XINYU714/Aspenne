@@ -14,6 +14,7 @@ gsap.to(".maintl", {
   y: "-=10%",
 });
 gsap.to(".mainobj", { duration: 2, opacity: 1, ease: Power2.easeOut });
+gsap.to(".mainobj-mob", { duration: 2, opacity: 1, ease: Power2.easeOut });
 gsap.to(".hour", {
   rotation: 152,
   scrollTrigger: {
