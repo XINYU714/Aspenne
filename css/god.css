@@ -222,9 +222,6 @@
     top: 20%;
     right: 5%;
   }
-  .pin .pintext {
-    /* top: 45%; */
-  }
 }
 @media (max-width: 576px) {
   .main_witch .overview {

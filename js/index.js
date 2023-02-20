@@ -1,13 +1,8 @@
-window.onload = function (event) {
-  getHeight();
-};
-window.onresize = function (event) {
-  getHeight();
-};
+let styleHeight = document.head.appendChild(document.createElement("style"));
+getHeight();
+window.onresize = () => getHeight();
 function getHeight() {
-  var indexbgHeight = document.querySelector("img.mbg").clientHeight;
-  var styleHeight = document.head.appendChild(document.createElement("style"));
-
+  let indexbgHeight = document.querySelector("img.mbg").clientHeight;
   styleHeight.innerHTML =
     ".linear::after {top: calc(" +
     indexbgHeight +
@@ -16,28 +11,26 @@ function getHeight() {
     " 120px" +
     ");};";
 }
+
 gsap.registerPlugin(ScrollTrigger);
-/*starani*/
-gsap.from(" .mbg", { duration: 2, opacity: 0 }, 1);
-gsap.from(".mainrole", { duration: 2, opacity: 0 }, 3);
-var start = gsap.timeline();
+let start = gsap.timeline();
 start
+  .from(" .mbg", { duration: 1.5, opacity: 0 })
   .fromTo(
     ".title",
     { xPercent: -50, yPercent: -50, y: -50, opacity: 0 },
-    { xPercent: -50, yPercent: -50, y: 0, duration: 2, opacity: 1 },
-    2
+    { xPercent: -50, yPercent: -50, y: 0, duration: 1.5, opacity: 1 },
+    "<"
   )
+  .from(".mainrole", { opacity: 0, duration: 0.8 })
   .fromTo(
     ".mainrole",
     { y: -10, xPercent: -50, yPercent: -50 },
-    { duration: 1.2, y: 10, yoyo: true, repeat: -1 },
-    -1
+    { duration: 1.2, y: 10, yoyo: true, repeat: -1 }
   );
 
-/*download*/
-var dlBtn = document.querySelector(".download");
-
+/*DownLoad Btn*/
+let dlBtn = document.querySelector(".download");
 dlBtn.onmouseover = () => changeDl();
 dlBtn.onmouseleave = () => leaveDl();
 
@@ -47,18 +40,15 @@ function changeDl() {
 function leaveDl() {
   dlBtn.src = "./src/dl.png";
 }
-/*anne say*/
-var introText = document.querySelector(".gameintro");
-function showintro() {
+/*Tab Open*/
+let introText = document.querySelector(".gameintro");
+function showIntro() {
   gsap.to(".gameintro", { opacity: 1, duration: 0.5 });
   introText.style.display = "block";
 }
-function closeintro() {
+function closeIntro() {
   gsap.to(".gameintro", { opacity: 0 });
   introText.style.display = "none";
 }
-setTimeout(closeintro, 1200);
-document.querySelector(".gameintro").onclick = () => closeintro();
-document.querySelector(".mainrole").onclick = () => showintro();
-
-
+document.querySelector(".gameintro").onclick = () => closeIntro();
+document.querySelector(".mainrole").onclick = () => showIntro();

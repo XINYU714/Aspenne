@@ -164,36 +164,6 @@ gsap.from(".clothct", {
     toggleActions: "play none restart reset",
   },
 });
-
-const clothct2 = window.matchMedia("(max-width: 576px)");
-function clothPosChange() {
-  if (clothct2.matches) {
-    gsap.from(".clothct2", {
-      ease: Power2.easeOut,
-      opacity: 0,
-      y: "20%",
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".clothct2",
-        start: "top center",
-        toggleActions: "play none restart reset",
-      },
-    });
-  } else {
-    gsap.from(".clothct2", {
-      ease: Power2.easeOut,
-      opacity: 0,
-      y: "-20%",
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".clothct2",
-        start: "top center",
-        toggleActions: "play none restart reset",
-      },
-    });
-  }
-}
-clothPosChange();
 gsap.from(".poorcloth img", {
   ease: Power2.easeOut,
   opacity: 0,

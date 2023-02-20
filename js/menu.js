@@ -1,49 +1,52 @@
 const show = gsap.timeline();
-let menu = show.fromTo(
-  ".fly",
-  {
-    opacity: 0,
-    xPercent: -100,
-    yPercent: -50,
+show
+  .fromTo(
+    ".fly",
+    {
+      opacity: 0,
+      xPercent: -100,
+      yPercent: -50,
+      left: "0%",
+      top: "50%",
+      ease: Expo.easeOut,
+    },
+    {
+      opacity: 1,
+      duration: 0.8,
+      xPercent: -100,
+      yPercent: -50,
+      left: "100%",
+      top: "50%",
+    }
+  )
+  .to(".push", {
     left: "0%",
-    top: "50%",
-    ease: Expo.easeOut,
-  },
-  {
-    opacity: 1,
-    duration: 0.8,
-    xPercent: -100,
-    yPercent: -50,
-    left: "100%",
-    top: "50%",
-  }
-);
-show.to(".push", {
-  left: "0%",
-  duration: 1,
-});
-show.to(".push", {
-  background: "#0000004d",
-  duration:1,
-});
-show.to(".overlay-content a", {
-  opacity: 1,
-  stagger: {
-    amount: 1,
-    each: 0.5,
-    from: "start",
-    ease: "power2.inOut",
-  },
-});
+    duration: 1,
+  })
+  .to(".push", {
+    background: "#0000004d",
+  })
+  .to(
+    ".overlay-content a",
+    {
+      opacity: 1,
+      stagger: {
+        amount: 1,
+        each: 0.5,
+        from: "start",
+        ease: "power2.inOut",
+      },
+    },
+    "<"
+  );
 
-menu.pause();
+show.pause();
+document.querySelector("#menu").onclick = () => show.play();
+document.querySelector("#close").onclick = () => show.reverse();
 
-document.querySelector("#menu").onclick = () => menu.play();
-document.querySelector("#close").onclick = () => menu.reverse();
-
-function hiddenScroll() {
-  document.body.style.overflow = "hidden";
-}
-function openScroll() {
-  document.body.style.overflow = "auto";
-}
+// function hiddenScroll() {
+//   document.body.style.overflow = "hidden";
+// }
+// function openScroll() {
+//   document.body.style.overflow = "auto";
+// }

@@ -75,7 +75,7 @@ gsap.from(".water-wrapper", {
   duration: 1.5,
   scrollTrigger: {
     trigger: ".water-wrapper",
-    start:"top bottom",
+    start: "top bottom",
     scrub: 0.5,
     toggleActions: "play none restart reset",
   },
@@ -136,15 +136,11 @@ function myFunction(attackChange) {
           trigger: ".pin",
           start: "top center",
           end: "center top",
-          // pinSpacing: true,
           scrub: 0.3,
-          // pin: true,
-          // markers: true,
         },
       }
     );
-  } else if(attacklabtop.matches)
-  {
+  } else if (attacklabtop.matches) {
     gsap.fromTo(
       ".attack",
       {
@@ -184,8 +180,7 @@ function myFunction(attackChange) {
         },
       }
     );
-  }
-  else {
+  } else {
     gsap.fromTo(
       ".attack",
       {
@@ -223,8 +218,6 @@ function myFunction(attackChange) {
           end: "center top",
           // pinSpacing: true,
           scrub: 0.3,
-          // pin: true,
-          // markers: true,
         },
       }
     );

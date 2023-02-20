@@ -6,17 +6,13 @@ gsap.to(".down", {
   ease: "steps(" + frame_count + ")",
   scrollTrigger: {
     trigger: ".down",
-    // pin: true,
     pinspacing: true,
     toggleActions: "play none restart reset",
     start: "center center",
     end: "+=" + 0.3 * offset_value,
     scrub: true,
-    // snap: true,
-    // markers: true,
   },
 });
-
 gsap.to(".drinking1", {
   repeat: -1,
   yoyo: true,
@@ -42,7 +38,6 @@ gsap.from(".drinkingt1", {
     start: "top center",
     end: "top center",
     toggleActions: "play none restart none",
-
     scrub: 0.8,
   },
 });
@@ -55,7 +50,6 @@ gsap.to(".drinkingtl", {
     trigger: ".drinkingtl",
     start: "top center",
     toggleActions: "play none restart reset",
-    // markers: true,
   },
 });
 gsap.to(".drinkingct", {
@@ -67,10 +61,9 @@ gsap.to(".drinkingct", {
     trigger: ".drinkingct",
     start: "top center",
     toggleActions: "play none restart reset",
-    // markers: true,
   },
 });
-var dkshow = gsap.timeline();
+let dkshow = gsap.timeline();
 const drinkingshow = window.matchMedia("(max-width: 768px)");
 function drinkingTextChange(drinkingshow) {
   if (drinkingshow.matches) {
